@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    html, body {
+        font-family: Arial, 'microsoft yahei';
+    }
+
+    h2 {
+        color: #666;
+        font-size: 34px;
+        text-align: center;
+    }
+
+    h1, h3, h4, h5, h6, ul, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .top {
+        height: 42px;
+        width: 1100px;
+        position: absolute;
+        top: 80px;
+        left: 350px;
+    }
+
+    .top ul li {
+        float: left;
+        width: 82px;
+        font-size: 18px;
+        line-height: 42px;
+        text-align: center;
+        list-style: none;
+
+    }
+
+    .top ul li a {
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .top ul li a:hover {
+        color: #f70505;
+    }
+
+    .top border {
+        width: 100%;
+        border-bottom: 2px solid #c81623;
+        position: absolute;
+        top: 44px;
+    }
+
+    .navigate {
+        position: absolute;
+        top: 80px;
+        left: 130px;
+    }
+
+    .navigate a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navigate {
+        width: 211px;
+        height: 510px;
+        background-color: #c81623;
+        color: #fff;
+        text-indent: 10px;
+    }
+
+    .navigate .title {
+        color: #fff;
+
+    }
+
+    .navigate .title h3 {
+        width: 210px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        font-weight: normal;
+        background-color: #b1191a;
+        border-bottom: #b1191a;
+    }
+
+    .navigate .list {
+        font-size: 14px;
+        list-style: none;
+        position: relative;
+
+    }
+
+    .navigate .list li {
+        height: 31px;
+        line-height: 31px;
+    }
+
+    .navigate .list li:hover {
+        background-color: #f7f7f7;
+    }
+
+    .navigate .list li:hover a {
+        color: #c81623;
+    }
+
+    .navigate .list li i {
+        float: right;
+        font: 400 9px/14px consolas;
+        margin-right: 10px;
+        line-height: 31px;
+    }
+
+    .navigate .list li:hover i {
+        color: #f7f7f7;
+        background-color: #f7f7f7;
+        margin-right: -10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .navigate .list li:hover .detail {
+        display: block;
+    }
+
+    .navigate .list li .detail {
+        border: 1px solid #b1191a;
+        border-top: 2px solid #b1191a;
+        position: absolute;
+        width: 1000px;
+        height: 465px;
+        background-color: #f7f7f7;
+        top: -2px;
+        left: 210px;
+        display: none;
+        text-align: center;
+        line-height: 465px;
+        font-size: 64px;
+        font-weight: 800;
+        color: #b1191a;
+    }
+
+    .navigate .list li .active {
+        display: block;
+    }
+
+    .navigate .list li .detail img {
+        width: 990px;
+        position: absolute;
+        left: 10px;
+        height: 465px;
+
+    }
+
+    .daojishi img {
+        position: absolute;
+        width: 1212px;
+        left: 130px;
+        height: 55px;
+        top: 595px;
+
+    }
+
+    .line1 {
+        border-radius: 10px;
+        width: 420px;
+        height: 387px;
+        background-color: #d47e7e;
+    }
+
+    .line1 img {
+        width: 190px;
+        height: 105px;
+    }
+
+    .line1 a {
+        float: left;
+        display: block;
+        padding: 10px;
+
+    }
+
+    .line1 a:hover {
+        background-color: #000;
+    }
+
+    .line img {
+        position: relative;
+        left: 110px;
+        height: 255px;
+        top: 560px;
+    }
+
+    .part {
+        position: absolute;
+        top: 1175px;
+        left: 130px;
+    }
+
+    .part h3 {
+        border-radius: 10px;
+        width: 420px;
+        height: 55px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 25px;
+        background-color: #68af9e;
+        color: #fff;
+        text-indent: 10px;
+    }
+
+    .line2 img {
+        position: relative;
+        left: 550px;
+        height: 450px;
+        top: 560px;
+    }
+
+    .apart img {
+        position: relative;
+        width: 1224px;
+        left: 120px;
+        height: 605px;
+        top: 555px;
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+<div>
+    <h2><b>京东商城首页</b></h2>
+    <div class="navigate">
+        <a class="title" href="#"><h3>全部商品的分类</h3></a>
+        <ul class="list">
+            <li><a href="#">家用电器</a><i>&gt;</i>
+                <div class="detail active"><img src="images/p1.png"></div>
+            </li>
+            <li><a href="#">手机</a>、<a href="#">运营商</a>、<a href="#">数码</a><i>&gt;</i>
+                <div class="detail"><img src="images/p2.png"></div>
+            </li>
+            <li><a href="#">电脑</a>、<a href="#">办公</a><i>&gt;</i>
+                <div class="detail"><img src="images/p3.png"></div>
+            </li>
+            <li><a href="#">家居</a>、<a href="#">家具</a>、<a href="#">家装</a>、<a href="#">厨具</a><i>&gt;</i>
+                <div class="detail"><img src="images/p4.png"></div>
+            </li>
+            <li><a href="#">男装</a>、<a href="#">女装</a>、<a href="#">童装</a>、<a href="#">内衣</a><i>&gt;</i>
+                <div class="detail"><img src="images/p5.png"></div>
+            </li>
+            <li><a href="#">个护化妆</a>、<a href="#">清洁用品</a>、<a href="#">宠物</a><i>&gt;</i>
+                <div class="detail"><img src="images/p6.png"></div>
+            </li>
+            <li><a href="#">鞋靴</a>、<a href="#">箱包</a>、<a href="#">珠宝</a>、<a href="#">奢侈品</a><i>&gt;</i>
+                <div class="detail"><img src="images/p7.png"></div>
+            </li>
+            <li><a href="#">运动</a>、<a href="#">户外</a>、<a href="#">钟表</a><i>&gt;</i>
+                <div class="detail"><img src="images/p8.png"></div>
+            </li>
+            <li><a href="#">汽车</a>、<a href="#">汽车用品</a><i>&gt;</i>
+                <div class="detail"><img src="images/p9.png"></div>
+            </li>
+            <li><a href="#">母婴</a>、<a href="#">玩具乐器</a><i>&gt;</i>
+                <div class="detail"><img src="images/p10.png"></div>
+            </li>
+            <li><a href="#">食品</a>、<a href="#">酒类</a>、<a href="#">生鲜</a>、<a href="#">特产</a><i>&gt;</i>
+                <div class="detail">11</div>
+            </li>
+            <li><a href="#">医药保健</a><i>&gt;</i>
+                <div class="detail">12</div>
+            </li>
+            <li><a href="#">图书</a>、<a href="#">音像</a>、<a href="#">电子书</a><i>&gt;</i>
+                <div class="detail">13</div>
+            </li>
+            <li><a href="#">彩票</a>、<a href="#">旅行</a>、<a href="#">充值</a>、<a href="#">票务</a><i>&gt;</i>
+                <div class="detail">14</div>
+            </li>
+            <li><a href="#">理财</a>、<a href="#">众筹</a>、<a href="#">白条</a>、<a href="#">保险</a><i>&gt;</i>
+                <div class="detail">14</div>
+            </li>
+        </ul>
+    </div>
+    <div class="top">
+        <ul>
+            <li><a target="blank" href="http://miaosha.jd.com/">秒杀</a></li>
+            <li><a href="#">优惠券</a></li>
+            <li><a href="http://red.jd.com/">闪购</a></li>
+            <li><a href="#">拍卖</a></li>
+            <li><a href="#">服饰城</a></li>
+            <li><a href="#">京东超市</a></li>
+            <li><a href="#">生鲜</a></li>
+            <li><a href="#">全球购</a></li>
+            <li><a href="#">京东金融</a></li>
+        </ul>
+    </div>
+    <div class="daojishi">
+        <img src="images/daojishi.png">
+    </div>
+    <div class="line">
+        <img src="images/line1.png">
+        <img src="images/line2.png">
+    </div>
+    <div class="part">
+        <h3><b>发现好货</b></h3>
+        <div class="line1">
+            <a href="#"><img src="images/h1.png"></a>
+            <a href="#"><img src="images/h2.png"></a>
+            <a href="#"><img src="images/h3.png"></a>
+            <a href="#"><img src="images/h4.png"></a>
+            <a href="#"><img src="images/h5.png"></a>
+            <a href="#"><img src="images/h6.png"></a>
+        </div>
+    </div>
+    <div class="line2">
+        <img src="images/b1.png">
+        <img src="images/b2.png">
+    </div>
+    <div class="apart">
+        <img src="images/c2.png">
+        <img src="images/c1.png">
+        <img src="images/c3.png">
+    </div>
+</div>
+</body>
+</html>
